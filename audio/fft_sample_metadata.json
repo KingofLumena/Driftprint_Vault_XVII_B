@@ -1,0 +1,14 @@
+{
+  "vault_id": "XVII-B",
+  "system": "Driftprint Quantum Emulation",
+  "file": "driftprint_fft_sample_72.1s.wav",
+  "format": "WAV",
+  "channels": 1,
+  "sample_rate_hz": 44100,
+  "bit_depth": 16,
+  "duration_seconds": 72.1,
+  "description": "Audio representation of harmonic qubit resonance for FFT spectral analysis",
+  "base_frequency_hz": 440.0,
+  "harmonics": 5,
+  "coherence_decay_factor": 0.02
+}

@@ -1,0 +1,214 @@
+{
+  "vault_id": "XVII-B",
+  "system": "Driftprint Quantum Emulation",
+  "timestamp": "2025-11-24T22:49:25.824581Z",
+  "analysis_type": "spectral_fft",
+  "source_duration_s": 72.1,
+  "fft_results": {
+    "spectrum_type": "fft",
+    "frequency_resolution_hz": 0.013872,
+    "bins": 50,
+    "spectrum_data": [
+      {
+        "frequency_hz": 0.0,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0139,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0277,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0416,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0555,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0694,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0832,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.0971,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.111,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.1248,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.1387,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.1526,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.1665,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.1803,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.1942,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.2081,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.2219,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.2358,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.2497,
+        "magnitude": 0.000346
+      },
+      {
+        "frequency_hz": 0.2636,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.2774,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.2913,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.3052,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.319,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.3329,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.3468,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.3607,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.3745,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.3884,
+        "magnitude": 0.000347
+      },
+      {
+        "frequency_hz": 0.4023,
+        "magnitude": 0.000348
+      },
+      {
+        "frequency_hz": 0.4161,
+        "magnitude": 0.000348
+      },
+      {
+        "frequency_hz": 0.43,
+        "magnitude": 0.000348
+      },
+      {
+        "frequency_hz": 0.4439,
+        "magnitude": 0.000348
+      },
+      {
+        "frequency_hz": 0.4578,
+        "magnitude": 0.000348
+      },
+      {
+        "frequency_hz": 0.4716,
+        "magnitude": 0.000348
+      },
+      {
+        "frequency_hz": 0.4855,
+        "magnitude": 0.000349
+      },
+      {
+        "frequency_hz": 0.4994,
+        "magnitude": 0.000349
+      },
+      {
+        "frequency_hz": 0.5132,
+        "magnitude": 0.000349
+      },
+      {
+        "frequency_hz": 0.5271,
+        "magnitude": 0.000349
+      },
+      {
+        "frequency_hz": 0.541,
+        "magnitude": 0.000349
+      },
+      {
+        "frequency_hz": 0.5549,
+        "magnitude": 0.000349
+      },
+      {
+        "frequency_hz": 0.5687,
+        "magnitude": 0.00035
+      },
+      {
+        "frequency_hz": 0.5826,
+        "magnitude": 0.00035
+      },
+      {
+        "frequency_hz": 0.5965,
+        "magnitude": 0.00035
+      },
+      {
+        "frequency_hz": 0.6103,
+        "magnitude": 0.00035
+      },
+      {
+        "frequency_hz": 0.6242,
+        "magnitude": 0.00035
+      },
+      {
+        "frequency_hz": 0.6381,
+        "magnitude": 0.000351
+      },
+      {
+        "frequency_hz": 0.652,
+        "magnitude": 0.000351
+      },
+      {
+        "frequency_hz": 0.6658,
+        "magnitude": 0.000351
+      },
+      {
+        "frequency_hz": 0.6797,
+        "magnitude": 0.000351
+      }
+    ]
+  }
+}
