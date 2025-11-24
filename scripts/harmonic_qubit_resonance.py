@@ -98,9 +98,22 @@ def compute_coherence_metrics(resonance_data: List[Dict]) -> Dict:
     amplitudes = [d["amplitude"] for d in resonance_data]
     times = [d["time"] for d in resonance_data]
     
+    if not amplitudes:
+        return {
+            "total_duration_s": 0,
+            "initial_peak_amplitude": 0,
+            "final_avg_amplitude": 0,
+            "coherence_retention": 0,
+            "sample_count": 0
+        }
+    
     # Compute coherence decay envelope
-    peak_amplitude = max(abs(a) for a in amplitudes[:100])  # Initial peak
-    final_amplitude = sum(abs(a) for a in amplitudes[-100:]) / 100  # Final average
+    # Use min of 100 or available samples to avoid IndexError
+    initial_count = min(100, len(amplitudes))
+    final_count = min(100, len(amplitudes))
+    
+    peak_amplitude = max(abs(a) for a in amplitudes[:initial_count])  # Initial peak
+    final_amplitude = sum(abs(a) for a in amplitudes[-final_count:]) / final_count  # Final average
     
     # Coherence time estimation (T2*)
     coherence_ratio = final_amplitude / peak_amplitude if peak_amplitude > 0 else 0
@@ -116,16 +129,22 @@ def compute_coherence_metrics(resonance_data: List[Dict]) -> Dict:
 
 def generate_fft_spectrum(
     resonance_data: List[Dict],
-    sample_rate: float = 100.0
+    sample_rate: float = 100.0,
+    max_bins: int = 50
 ) -> Dict:
     """
     Generate FFT spectrum data from resonance simulation.
     
     Uses a simple DFT implementation for spectral analysis.
     
+    Note: The number of frequency bins is limited to max_bins for computational
+    efficiency. For higher frequency resolution, increase max_bins at the cost
+    of longer computation time (O(n * max_bins) complexity).
+    
     Args:
         resonance_data: Time-domain resonance data
         sample_rate: Sample rate in Hz
+        max_bins: Maximum number of frequency bins to compute (default: 50)
         
     Returns:
         Dictionary containing frequency spectrum data
@@ -133,8 +152,8 @@ def generate_fft_spectrum(
     amplitudes = [d["amplitude"] for d in resonance_data]
     n = len(amplitudes)
     
-    # Compute limited FFT bins (first 50 frequency bins for efficiency)
-    num_bins = min(50, n // 2)
+    # Compute limited FFT bins (limited for computational efficiency)
+    num_bins = min(max_bins, n // 2)
     spectrum = []
     
     for k in range(num_bins):
