@@ -1,0 +1,9 @@
+{
+  "test_id": "AEI-Node9",
+  "coherence_seconds": 72.1,
+  "node_count": 927,
+  "error_rate": 0.0006,
+  "interference_cycles": 9,
+  "recovery_rate": 0.978,
+  "timestamp": "2025-11-24T15:41:00Z"
+}
